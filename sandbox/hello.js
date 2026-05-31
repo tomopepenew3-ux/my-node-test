@@ -4,5 +4,5 @@ constserver = http.createServer((req, res) => {
 });
 
 server.listen(3002, '0.0.0.0', () => {
-    console.log('Server is running on port 3001');
+    console.log('Server is running on port 3002');
 });
