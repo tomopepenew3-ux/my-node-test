@@ -1,4 +1,6 @@
-constserver = http.createServer((req, res) => {
+const http = require('http');
+
+const server = http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'});
     res.end('Hello! Server is working!');
 });
@@ -6,3 +8,4 @@ constserver = http.createServer((req, res) => {
 server.listen(3002, '0.0.0.0', () => {
     console.log('Server is running on port 3002');
 });
+
